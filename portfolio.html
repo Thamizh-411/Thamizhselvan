@@ -1,1 +1,295 @@
-create a demo file
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THAMIZHSELVAN</title>
+    <style>
+        .top {
+            position: relative;
+            width: 100vw;
+            height: 10vh;
+           
+           background-color: blueviolet;
+            display: flex;
+           align-items: center;
+             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            
+        }
+        .buttons{
+          position: absolute;
+          padding-left: 700px;
+        }
+        #name{
+          position: absolute;
+          font-size: xx-large;
+          padding-left: 80px;
+          color: white;
+        }
+        .middle {
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            
+            background: url('https://wallpapercave.com/wp/wp7013192.jpg') no-repeat center center/cover;
+            color: white;
+        }
+
+        #hi, #this, #soft {
+            margin: 0;
+            font-size: 3rem;
+            line-height: 1.5;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .education {
+   position: absolute;
+   left: 800px;
+   color: black;
+   display: none;
+
+
+}
+
+
+
+.skills {
+    position: absolute;
+   left: 800px;
+   color: black;
+   font-size: x-large;
+   display: none;
+
+    
+   
+   
+    
+        
+}
+.experience {
+    position: absolute;
+   left: 800px;
+   color: black;
+   display: none;
+   
+   
+
+   
+    
+    
+        
+}
+.projects {
+    position: absolute;
+   left: 800px;
+   color: black;
+   display: none;
+   
+
+    
+        
+}
+
+
+.contact {
+    position: absolute;
+   left: 800px;
+   color: black;
+   display: none;
+   
+     
+    
+}
+
+
+.image{
+    position: absolute;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center; 
+    color: white;
+     
+    right: 150px;
+    top: 30px;
+
+    
+    
+}
+.image {
+    height: 500px;
+            width: 150;
+            border-radius: 250px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures the image doesn't overflow the border */
+    margin-top: 50px; /* Add spacing between the image and content above */
+   
+   
+}
+
+.image img {
+    width: 100%; /* Make the image fit the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image is cropped to fit the circle */
+}
+
+
+
+.bottom {
+            position: relative;
+           
+            background-color:blueviolet;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            width: 100vw;
+            height: 10vh;
+            color: white;
+        
+        }
+        button {
+            padding: 10px 20px;
+            
+            margin: 5px;
+            border: none;
+            background-color: blueviolet;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color:rgb(43, 226, 83);
+        }
+       
+    </style>
+        
+</head>
+<body>
+    <div class="top" id="header">
+        <h1 id="name">THAMIZHSELVAN M</h1>
+        <div class="buttons" id="but">
+          <button id="homebtn">Home</button>
+          <button id="educationbtn">Education</button>
+          <button id="skillbtn">Skills</button>
+          <button id="exepbtn">Experience</button>
+          <button id="projbtn">Projects</button>
+          <button id="contbtn">Contact</button>
+        </div>
+        
+    </div>
+    <div class="middle" id="mid">
+     <h1 id="hi">Hi There,</h1>
+     <h1 id="this">This is Thamizh</h1>
+     <h1 id="soft">Software Developer</h1>
+        
+       
+       
+       
+       
+        <div class="image" id="image">
+            <img src="Picsart_24-12-29_18-46-07-862-removebg-preview (1).png" alt="">
+        </div>
+        
+        
+        <div class="education" id="educ">
+            <h1>Bsc Computer Science</h1>
+            <h2>Sri Sankara Arts and Science College</h2>
+            <h2>Kanchipuram</h2>
+            <h1>HSC</h1>
+            <h2>Govt Boys Hr.Sec School</h2>
+            <h2>Panapakkam</h2>
+           <h1>SSLC</h1>
+            <h2>Govt Boys Hr.Sec School</h2>
+            <h2>Panapakkam</h2>
+        </div>
+        <div class="skills" id="skills">
+            <h1>1.HTML</h1>
+            <h1>2.CSS</h1>
+            <h1>3.Javascript</h1>
+            <h1>4.Python</h1>
+        </div>
+        <div class="experience" id="exp">
+            <h1>RELATIONSHIP MANAGER</h1>
+            <H1>IDFC FIRST BHARAT LTD</H1>
+            <h2>Kanchipuram</h2>
+            <h2>One Year Experience</h2>
+        </div>
+        <div class="projects" id="pro">
+            <h1>1.Portfolio website</h1>
+            <h1>2.QR Code Generator Website</h1>
+        </div>
+        <div class="contact" id="cell">
+            <h1>Email-thamilmurali2003</h1>
+            <h1>Cell-9361369114</h1>
+        </div>
+        
+    </div>
+   
+    <div class="bottom" id="bot">
+        <h1>thamilmurali2003@gmail.com</h1>
+    </div>
+    <script>
+        document.getElementById("educationbtn").onclick=function(){
+            document.getElementById("educ").style.display='block'
+            document.getElementById("image").style.display='none'
+            document.getElementById("cell").style.display='none'
+            document.getElementById("pro").style.display='none'
+            document.getElementById("exp").style.display='none'
+            document.getElementById("skills").style.display='none'
+        }
+        document.getElementById("skillbtn").onclick=function(){
+            document.getElementById("skills").style.display='block'
+            document.getElementById("image").style.display='none'
+            document.getElementById("educ").style.display='none'
+            document.getElementById("cell").style.display='none'
+            document.getElementById("pro").style.display='none'
+            document.getElementById("exp").style.display='none'
+        }
+        document.getElementById("exepbtn").onclick=function(){
+            document.getElementById("exp").style.display='block'
+            document.getElementById("cell").style.display='none'
+            document.getElementById("pro").style.display='none'
+            document.getElementById("educ").style.display='none'
+            document.getElementById("skills").style.display='none'
+            document.getElementById("image").style.display='none'
+        }
+        document.getElementById("projbtn").onclick=function(){
+            document.getElementById("pro").style.display='block'
+            document.getElementById("cell").style.display='none'
+            document.getElementById("educ").style.display='none'
+            document.getElementById("skills").style.display='none'
+            document.getElementById("exp").style.display='none'
+            document.getElementById("image").style.display='none'
+}
+document.getElementById("contbtn").onclick=function(){
+    document.getElementById("cell").style.display='block'
+    document.getElementById("educ").style.display='none'
+    document.getElementById("skills").style.display='none'
+    document.getElementById("exp").style.display='none'
+    document.getElementById("pro").style.display='none'
+    document.getElementById("image").style.display='none'
+
+}
+document.getElementById("homebtn").onclick=function(){
+    
+    document.getElementById("cell").style.display='none'
+    document.getElementById("educ").style.display='none'
+    document.getElementById("skills").style.display='none'
+    document.getElementById("exp").style.display='none'
+    document.getElementById("pro").style.display='none'
+    document.getElementById("image").style.display='block'
+
+}
+
+    </script>
+    </body>
+</html>
